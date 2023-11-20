@@ -24,9 +24,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
     <img alt="Python" src="https://img.shields.io/badge/python-3.8-blue.svg">
     <a href="https://huggingface.co/oneonlee/KoAirBERT"><img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97-Models%20on%20Hub-yellow"></a>
     <a href="https://github.com/oneonlee/KoAirBERT/blob/master/LICENSE"><img alt="License: AGPL-v3" src="https://img.shields.io/badge/License-AGPL--v3-blue.svg"></a>
-<!--     <a href="https://doi.org/XX.XXXX/zenodo.XXXXXXX"> -->
-<!--         <img alt="DOI" src="https://img.shields.io/badge/DOI-XX.XXXX%2Fzenodo.XXXXXXX-blue"> -->
-<!--     </a> -->
+    <a href="https://doi.org/10.5281/zenodo.10158254"><img alt="DOI" src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10158254-blue"></a>
 </p>
 
 ## How to use
@@ -51,9 +49,22 @@ model = AutoModelForPreTraining.from_pretrained("oneonlee/KoAirBERT")
 - [국토교통부 항공용어사전](https://www.airportal.go.kr/knowledge/library/KdMain01.jsp)
 - [항공안전 자율보고 백서(2021)](https://www.airsafety.or.kr/airsafety/board/aspds/view.do?bbsNo=4431)
 
-<!-- ## Citation -->
+## Citation
 
-<!-- 이 코드를 연구용으로 사용하는 경우 아래와 같이 인용해주세요. -->
+이 코드를 연구용으로 사용하는 경우 아래와 같이 인용해주세요.
+
+```bibtex
+@software{lee_2023_10158254,
+  author       = {Lee, DongGeon},
+  title        = {KoAirBERT: Korean BERT Model Specialized for Aviation Safety Domain},
+  month        = nov,
+  year         = 2023,
+  publisher    = {Zenodo},
+  version      = {v1.0.0},
+  doi          = {10.5281/zenodo.10158254},
+  url          = {https://doi.org/10.5281/zenodo.10158254}
+}
+```
 
 ## License
 
