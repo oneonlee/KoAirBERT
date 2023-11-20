@@ -14,6 +14,7 @@ data/rawdata/*
 !data/rawdata/.gitkeep
 
 ### Data ###
+data/train/항공안전문화지표 분석 모델.csv
 data/train/항공안전문화지표 분석모델_증강.csv
 data/train/사고준사고보고서.csv
 data/train/국토교통부_항공용어사전_20200916.csv

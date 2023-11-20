@@ -16,7 +16,8 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 -->
 
 <div align="center">
-    <h1>🤗 KoAirBERT: 항공 안전 도메인에 특화된 한국어 BERT 모델 ✈️</h1>
+    <h1>🤗 KoAirBERT  ✈️</h1>
+    <p>항공 안전 도메인에 특화된 한국어 BERT 모델</p>
 </div>
     
 <p align="center">
@@ -50,7 +51,7 @@ model = AutoModelForPreTraining.from_pretrained("oneonlee/KoAirBERT")
 - [국토교통부 항공용어사전](https://www.airportal.go.kr/knowledge/library/KdMain01.jsp)
 - [항공안전 자율보고 백서(2021)](https://www.airsafety.or.kr/airsafety/board/aspds/view.do?bbsNo=4431)
 
-## Citation
+<!-- ## Citation -->
 
 <!-- 이 코드를 연구용으로 사용하는 경우 아래와 같이 인용해주세요. -->
 
