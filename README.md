@@ -24,7 +24,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
     <img alt="Python" src="https://img.shields.io/badge/python-3.8-blue.svg">
     <a href="https://huggingface.co/oneonlee/KoAirBERT"><img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97-Models%20on%20Hub-yellow"></a>
     <a href="https://github.com/oneonlee/KoAirBERT/blob/master/LICENSE"><img alt="License: AGPL-v3" src="https://img.shields.io/badge/License-AGPL--v3-blue.svg"></a>
-    <a href="https://doi.org/10.5281/zenodo.10158254"><img alt="DOI" src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10158254-blue"></a>
+    <a href="https://doi.org/10.5281/zenodo.10171038"><img alt="DOI" src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10171038-blue"></a>
 </p>
 
 ## How to use
@@ -38,6 +38,31 @@ from transformers import AutoTokenizer, AutoModelForPreTraining
 tokenizer = AutoTokenizer.from_pretrained("oneonlee/KoAirBERT")
 model = AutoModelForPreTraining.from_pretrained("oneonlee/KoAirBERT")
 ```
+
+## Post-training
+
+KoAirBERT는 [klue/bert-base](https://huggingface.co/klue/bert-base) 모델에 MLM 및 NSP 방식의 Post-training을 추가로 수행한 모델입니다.<br>
+학습에는 직접 구축한 [한국어 항공안전 도메인 데이터셋](#dataset-info)을 사용했고, NVIDIA RTX A6000 48GB 1장을 사용하여 약 40분 소요되었습니다.<br>
+학습 세팅은 아래와 같습니다.
+
+| Params | Initial learning rate | Batch Size | Epochs | Max length\* | Weight decay |
+| :-- | :--: |  :--: | :--: | :--: | :--: |
+| 111M | 5e-5 | 8 | 3 | 512 | 0.01 |
+
+## Dataset Info.
+
+|     데이터 명                                   |     데이터 건 수    |     문장 수    |       단어 수    |
+|:-------------------------------------------------|--------------------:|---------------:|-----------------:|
+|     사고·준사고보고서                           |               54    |       1,850    |        33,935    |
+|     안전장애 보고 데이터                        |              684    |      10,018    |        69,472    |
+|     고장 보고 데이터                            |            1,771    |      10,480    |        85,165    |
+|     국토교통부 항공용어사전                     |            4,961    |      15,312    |       167,295    |
+|     항공안전문화지표 분석 데이터                |            1,055    |       3,652    |       244,032    |
+|     항공안전문화지표 분석 데이터 – 본문 증강    |            5,902    |      56,193    |     1,055,875    |
+|     GYRO 항공 안전 자율 보고서                  |              874    |      10,655    |       158,186    |
+|     항공위키                                   |               4,314 |         38,927 |          766,214 |
+|-----------------------------------------------|--------------|--------|----------|
+|     **누적**                                        |           **19,615**    |     **147,087**    |     **2,580,174**    |
 
 ## Reference
 
@@ -60,9 +85,9 @@ model = AutoModelForPreTraining.from_pretrained("oneonlee/KoAirBERT")
   month        = nov,
   year         = 2023,
   publisher    = {Zenodo},
-  version      = {v1.0.0},
-  doi          = {10.5281/zenodo.10158254},
-  url          = {https://doi.org/10.5281/zenodo.10158254}
+  version      = {v1.0.1},
+  doi          = {10.5281/zenodo.10171038},
+  url          = {https://doi.org/10.5281/zenodo.10171038}
 }
 ```
 
