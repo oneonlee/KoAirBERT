@@ -64,6 +64,11 @@ KoAirBERT는 [klue/bert-base](https://huggingface.co/klue/bert-base) 모델에 M
 |-----------------------------------------------|--------------|--------|----------|
 |     **누적**                                        |           **19,615**    |     **147,087**    |     **2,580,174**    |
 
+### Download Dataset
+
+- [OneDrive](https://o365inha-my.sharepoint.com/:u:/g/personal/22191340_office_inha_ac_kr/EZq02MzgUMJMiLgjt9uhedUBSqIgq03u55T-x94Np6SNYw?e=0BdafP)
+- [Google Drive](https://drive.google.com/file/d/1VN7GWzJz9Xy0ezeEuiFjtQmjgg1KTMvM/view?usp=sharing)
+
 ## Reference
 
 - [BERT](https://arxiv.org/abs/1810.04805)
