@@ -53,13 +53,12 @@ KoAirBERT는 [klue/bert-base](https://huggingface.co/klue/bert-base) 모델에 M
 
 |     데이터 명                                   |     데이터 건 수    |     문장 수    |       단어 수    |
 |:-------------------------------------------------|--------------------:|---------------:|-----------------:|
-|     사고·준사고보고서                           |               54    |       1,850    |        33,935    |
 |     안전장애 보고 데이터                        |              684    |      10,018    |        69,472    |
 |     고장 보고 데이터                            |            1,771    |      10,480    |        85,165    |
-|     국토교통부 항공용어사전                     |            4,961    |      15,312    |       167,295    |
+|     항공철도사고조사위원회 사고·준사고보고서           |               54    |       1,850    |        33,935    |
 |     항공안전문화지표 분석 데이터                |            1,055    |       3,652    |       244,032    |
-|     항공안전문화지표 분석 데이터 – 본문 증강    |            5,902    |      56,193    |     1,055,875    |
-|     GYRO 항공 안전 자율 보고서                  |              874    |      10,655    |       158,186    |
+|     GYRO 항공 안전 자율 보고서 – 본문 증강 데이터    |            6,776    |      66,848    |     1,214,061    |
+|     항공정보포털시스템 항공 용어사전                     |            4,961    |      15,312    |       167,295    |
 |     항공위키                                   |               4,314 |         38,927 |          766,214 |
 |-----------------------------------------------|--------------|--------|----------|
 |     **누적**                                        |           **19,615**    |     **147,087**    |     **2,580,174**    |
@@ -75,8 +74,9 @@ KoAirBERT는 [klue/bert-base](https://huggingface.co/klue/bert-base) 모델에 M
 - [klue/bert-base](https://huggingface.co/klue/bert-base)
 - [huggingface/transformers](https://github.com/huggingface/transformers/) - pytorch [language-modeling](https://github.com/huggingface/transformers/tree/main/examples/pytorch/language-modeling) examples
 - [항공 안전 정보지 (GYRO)](https://www.airsafety.or.kr/airsafety/board/gyro/list.do)
+- [항공철도사고조사위원회 사고·준사고보고서](https://araib.molit.go.kr/USR/airboard0201/m_34497/lst.js)
 - [항공위키](https://airtravelinfo.kr/wiki/)
-- [국토교통부 항공용어사전](https://www.airportal.go.kr/knowledge/library/KdMain01.jsp)
+- [항공정보포털시스템 항공 용어사전](https://www.airportal.go.kr/knowledge/library/KdMain01.jsp)
 - [항공안전 자율보고 백서(2021)](https://www.airsafety.or.kr/airsafety/board/aspds/view.do?bbsNo=4431)
 
 ## Citation
